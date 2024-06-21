@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    .contenedor-imagen {
+      position: relative;
+      display: inline-block; /* Asegura que el tamaño del contenedor se ajuste al contenido */
+    }
+    #divmain-phone{
+        display: none;
+    }
+    .gradiente {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%; /* Altura del gradiente */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+      pointer-events: none; /* Permite hacer clic en la imagen a través del gradiente */
+    }
+    #image{
+      display: flex;
+      border: none;
+      border-radius: 25px;
+      width: 27vw;
+      height: 71vh;
+      margin-top: 9vh;
+    }
+    .navbar{
+      display: flex;
+      flex-direction: row;
+    }
+    body{
+      background-image: url(assets/fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #all{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #video{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 35vw;  /* Ancho del iframe */
+      height: 39vh; /* Altura del iframe */  /* Quitar borde predeterminado */
+      border-radius: 50px; /* Radio de redondeo */
+      margin-bottom: 5vh;
+      margin-top: 5vh;
+    }
+    #div2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #divmain{
+      display: flex;
+      border-radius: 100px;
+      background-color: black;
+      margin-left: 14vw;
+      margin-right: 14vw;
+      margin-top: 8vh;
+      margin-bottom: 8vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .letra{
+      font-family: "Playwrite MX", cursive;
+      font-weight: 1000;
+    }
+
+    #links{
+      width: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .letras{
+      font-family: "Rubik", sans-serif;
+    }
+    
+    @media (max-width: 1100px){
+        #space{
+            height: 100px;
+        }
+        .letra{
+            font-family: "Playwrite MX", cursive;
+            font-weight: 1000;
+            font-size: 60px;
+          }
+
+          .letras{
+            font-family: "Rubik", sans-serif;
+            font-size: 50px;
+          }
+
+        #divmain-phone{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            background-image: none;
+        }
+        #divmain{
+            display: none;
+          }
+
+          #image{
+            width: 100%;
+            height: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border-radius: 0px;
+          }
+          .contenedor-imagen {
+            width: 100%;
+            height: 100%;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            box-sizing: border-box;
+          }
+
+          #video{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 60vw;  /* Ancho del iframe */
+            height: 20vh; /* Altura del iframe */  /* Quitar borde predeterminado */
+            border-radius: 50px; /* Radio de redondeo */
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+          }
+    }
