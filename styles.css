@@ -75,10 +75,12 @@
     }
 
     #links{
-      width: 300px;
+      width: 500px;
+      height: 100px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
     }
 
     .letras{
@@ -140,10 +142,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 60vw;  /* Ancho del iframe */
+            width: 70vw;  /* Ancho del iframe */
             height: 20vh; /* Altura del iframe */  /* Quitar borde predeterminado */
             border-radius: 50px; /* Radio de redondeo */
             margin-bottom: 5vh;
             margin-top: 5vh;
           }
+
     }
