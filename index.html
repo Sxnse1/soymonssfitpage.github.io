@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="descripcion" content="Redes sociales de soymonssfit">
+  <meta property="og:title" content="soymonssfit - linktree">
+  <meta property="og:description" content="Encuentra las redes socuales de soymonssfit - linktree">
+  <meta property="og:image" content="http://127.0.0.1:5500/assets/mon.png">
+  <meta property="og:url" content="http://127.0.0.1:5500/">
+
+  <title>soymonssfit - Linktree</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+    .contenedor-imagen {
+      position: relative;
+      display: inline-block; /* Asegura que el tamaño del contenedor se ajuste al contenido */
+    }
+    .gradiente {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%; /* Altura del gradiente */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+      pointer-events: none; /* Permite hacer clic en la imagen a través del gradiente */
+    }
+    #image{
+      display: flex;
+      border: none;
+      border-radius: 25px;
+      width: 45vw;
+      height: 90vh;
+      margin-top: 9vh;
+      display: block;
+    }
+    .navbar{
+      display: flex;
+      flex-direction: row;
+    }
+    body{
+      background-image: url(/assets/fondo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #all{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #video{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 600px;  /* Ancho del iframe */
+      height: 400px; /* Altura del iframe */
+      border: none;  /* Quitar borde predeterminado */
+      border-radius: 50px; /* Radio de redondeo */
+      overflow: hidden;
+      margin-bottom: 5vh;
+      margin-top: 5vh;
+    }
+    #div2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #divmain{
+      display: flex;
+      border-radius: 100px;
+      background-color: black;
+      margin-left: 220px;
+      margin-right: 220px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      align-items: center;
+      justify-content: center;
+    }
+    .letra{
+      font-family: "Playwrite MX", cursive;
+    }
+  </style>
+
+  <link rel="icon" href="/assets/file.png" type="image/x-icon">
+</head>
+<body>
+  <div id="divmain">
+  <main id="all">
+    <div class="contenedor-imagen">
+    <img id="image" src="/assets/mon.png" alt="foto de mons" >
+    <div class="gradiente"></div>
+  </div>
+    <h1 class="letra" style="color: white;">Soymonssfit</h1>
+    <p style="color: white;">Influencer fitnees</p>
+    <h2 style="color: white;">Sigueme en mis redes</h2>
+    <li><a href="https://www.tiktok.com/@soymonssfit">TikTok</a></li>
+    <li><a href="https://www.instagram.com/_soymonss/">Instagram</a></li>
+    <li><a href="https://www.youtube.com/@soymonss_">YouTube</a></li>
+
+    <iframe id="video" src="https://www.youtube.com/embed/Z0m0dk3x5nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </main>
+</div>
+  
+</body>
+</html>
